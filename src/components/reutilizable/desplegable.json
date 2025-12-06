@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_reutilizable_desplegables",
+  "info": {
+    "displayName": "Desplegable"
+  },
+  "options": {},
+  "attributes": {
+    "desplegable_btn": {
+      "type": "component",
+      "component": "reutilizable.button",
+      "repeatable": true
+    },
+    "desplegable_titulo": {
+      "type": "string"
+    },
+    "desplegable_link": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

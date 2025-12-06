@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_reutilizable_buttons",
+  "info": {
+    "displayName": "Button"
+  },
+  "options": {},
+  "attributes": {
+    "btn_text": {
+      "type": "string"
+    },
+    "btn_link": {
+      "type": "string"
+    },
+    "btn_color": {
+      "type": "string"
+    },
+    "btn_id": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}

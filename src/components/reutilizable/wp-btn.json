@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_reutilizable_wp_btns",
+  "info": {
+    "displayName": "wp_btn"
+  },
+  "options": {},
+  "attributes": {
+    "wp_btn_titulo": {
+      "type": "string"
+    },
+    "wp_btn_link": {
+      "type": "string"
+    },
+    "wp_btn_subtitulo": {
+      "type": "string"
+    },
+    "wp_btn_img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "wp_btn_mensaje": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

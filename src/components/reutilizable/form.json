@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_reutilizable_forms",
+  "info": {
+    "displayName": "Form"
+  },
+  "options": {},
+  "attributes": {
+    "form_nombre": {
+      "type": "string"
+    },
+    "form_apellido": {
+      "type": "string"
+    },
+    "form_email": {
+      "type": "email"
+    },
+    "form_telefono": {
+      "type": "string"
+    },
+    "form_fecha_envio": {
+      "type": "datetime"
+    },
+    "form_mensaje": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

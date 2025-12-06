@@ -1,0 +1,89 @@
+{
+  "kind": "singleType",
+  "collectionName": "ghg_homes",
+  "info": {
+    "singularName": "ghg-home",
+    "pluralName": "ghg-homes",
+    "displayName": "GHG_Home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "GHG_navbar": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "reutilizable.navbar",
+      "repeatable": false
+    },
+    "ghg_principal": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "ghg_quienes_somos": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "ghg_servicios": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "ghg_transformando": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "ghg_comercial": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "ghg_form": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    }
+  }
+}

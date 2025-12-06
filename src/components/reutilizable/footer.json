@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_reutilizable_footers",
+  "info": {
+    "displayName": "Footer"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "footer_info_btn": {
+      "type": "component",
+      "component": "reutilizable.desplegable",
+      "repeatable": true
+    },
+    "footer_inicio_btn": {
+      "type": "component",
+      "component": "reutilizable.button",
+      "repeatable": false
+    },
+    "footer_empresas": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

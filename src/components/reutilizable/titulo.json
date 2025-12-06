@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_reutilizable_titulos",
+  "info": {
+    "displayName": "Quote"
+  },
+  "options": {},
+  "attributes": {
+    "quote_titulo": {
+      "type": "string"
+    },
+    "quote_subtitulo": {
+      "type": "text"
+    },
+    "quote_img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "quote_btn": {
+      "type": "component",
+      "component": "reutilizable.button",
+      "repeatable": false
+    },
+    "quote_descripcion": {
+      "type": "text"
+    },
+    "sub_quote": {
+      "type": "component",
+      "component": "reutilizable.sub-quotes",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

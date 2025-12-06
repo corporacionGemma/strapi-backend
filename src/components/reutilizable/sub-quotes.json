@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_reutilizable_sub_quotes",
+  "info": {
+    "displayName": "Sub_Quotes"
+  },
+  "options": {},
+  "attributes": {
+    "sub_quote_title": {
+      "type": "string"
+    },
+    "sub_quote_text": {
+      "type": "text"
+    },
+    "sub_quote_btn": {
+      "type": "component",
+      "component": "reutilizable.button",
+      "repeatable": false
+    },
+    "sub_quote_img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

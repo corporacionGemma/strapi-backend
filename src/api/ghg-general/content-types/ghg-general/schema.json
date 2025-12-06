@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "ghg_generals",
+  "info": {
+    "singularName": "ghg-general",
+    "pluralName": "ghg-generals",
+    "displayName": "GHG_General"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "navbar": {
+      "type": "component",
+      "component": "reutilizable.navbar",
+      "repeatable": false
+    },
+    "wp_btn": {
+      "type": "component",
+      "component": "reutilizable.wp-btn",
+      "repeatable": false
+    },
+    "footer": {
+      "type": "component",
+      "component": "reutilizable.footer",
+      "repeatable": false
+    }
+  }
+}

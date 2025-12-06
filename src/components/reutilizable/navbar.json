@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_reutilizable_navbars",
+  "info": {
+    "displayName": "Navbar"
+  },
+  "options": {},
+  "attributes": {
+    "navbar_img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "navbar_btn": {
+      "type": "component",
+      "component": "reutilizable.button",
+      "repeatable": true
+    },
+    "navbar_desplegable": {
+      "type": "component",
+      "component": "reutilizable.desplegable",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}
