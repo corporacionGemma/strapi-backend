@@ -498,6 +498,66 @@ export interface ApiGhgContactFormGhgContactForm
   };
 }
 
+export interface ApiGhgContactoGhgContacto extends Struct.SingleTypeSchema {
+  collectionName: 'ghg_contactos';
+  info: {
+    displayName: 'GHG_Contacto';
+    pluralName: 'ghg-contactos';
+    singularName: 'ghg-contacto';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    contacto: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::ghg-contacto.ghg-contacto'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiGhgDinamicServicioGhgDinamicServicio
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'ghg_dinamic_servicios';
+  info: {
+    displayName: 'GHG-Dinamic-Servicio';
+    pluralName: 'ghg-dinamic-servicios';
+    singularName: 'ghg-dinamic-servicio';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::ghg-dinamic-servicio.ghg-dinamic-servicio'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    servicios_quote: Schema.Attribute.Component<
+      'reutilizable.dinamic-quote',
+      false
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiGhgGeneralGhgGeneral extends Struct.SingleTypeSchema {
   collectionName: 'ghg_generals';
   info: {
@@ -601,6 +661,65 @@ export interface ApiGhgHomeGhgHome extends Struct.SingleTypeSchema {
       'api::ghg-home.ghg-home'
     >;
     publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiGhgNosotroGhgNosotro extends Struct.SingleTypeSchema {
+  collectionName: 'ghg_nosotros';
+  info: {
+    displayName: 'GHG_Nosotro';
+    pluralName: 'ghg-nosotros';
+    singularName: 'ghg-nosotro';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::ghg-nosotro.ghg-nosotro'
+    > &
+      Schema.Attribute.Private;
+    mision: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    quienes_somos: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    valores: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    vision: Schema.Attribute.Component<'reutilizable.titulo', false>;
+  };
+}
+
+export interface ApiGhgServicioGhgServicio extends Struct.SingleTypeSchema {
+  collectionName: 'ghg_servicios';
+  info: {
+    displayName: 'GHG_Servicio';
+    pluralName: 'ghg-servicios';
+    singularName: 'ghg-servicio';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::ghg-servicio.ghg-servicio'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    servicios_quote: Schema.Attribute.Component<'reutilizable.titulo', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1118,8 +1237,12 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::ghg-contact-form.ghg-contact-form': ApiGhgContactFormGhgContactForm;
+      'api::ghg-contacto.ghg-contacto': ApiGhgContactoGhgContacto;
+      'api::ghg-dinamic-servicio.ghg-dinamic-servicio': ApiGhgDinamicServicioGhgDinamicServicio;
       'api::ghg-general.ghg-general': ApiGhgGeneralGhgGeneral;
       'api::ghg-home.ghg-home': ApiGhgHomeGhgHome;
+      'api::ghg-nosotro.ghg-nosotro': ApiGhgNosotroGhgNosotro;
+      'api::ghg-servicio.ghg-servicio': ApiGhgServicioGhgServicio;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

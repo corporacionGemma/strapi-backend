@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ghg_dinamic_servicios",
+  "info": {
+    "singularName": "ghg-dinamic-servicio",
+    "pluralName": "ghg-dinamic-servicios",
+    "displayName": "GHG-Dinamic-Servicio"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "servicios_quote": {
+      "type": "component",
+      "component": "reutilizable.dinamic-quote",
+      "repeatable": false
+    }
+  }
+}

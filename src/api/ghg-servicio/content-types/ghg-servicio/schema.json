@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "ghg_servicios",
+  "info": {
+    "singularName": "ghg-servicio",
+    "pluralName": "ghg-servicios",
+    "displayName": "GHG_Servicio"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "servicios_quote": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    }
+  }
+}

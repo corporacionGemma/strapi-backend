@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "ghg_nosotros",
+  "info": {
+    "singularName": "ghg-nosotro",
+    "pluralName": "ghg-nosotros",
+    "displayName": "GHG_Nosotro"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "quienes_somos": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "vision": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "mision": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "valores": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    }
+  }
+}

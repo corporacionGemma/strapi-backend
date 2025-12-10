@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_reutilizable_dinamic_quotes",
+  "info": {
+    "displayName": "dinamic_quote"
+  },
+  "options": {},
+  "attributes": {
+    "dinamic_titulo": {
+      "type": "string"
+    },
+    "dinamic_subtitulo": {
+      "type": "string"
+    },
+    "dinamic_text": {
+      "type": "text"
+    },
+    "dinamic_img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "dinamic_btn": {
+      "type": "component",
+      "component": "reutilizable.button",
+      "repeatable": false
+    },
+    "dinamic_id": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

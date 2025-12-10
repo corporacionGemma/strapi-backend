@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "ghg_contactos",
+  "info": {
+    "singularName": "ghg-contacto",
+    "pluralName": "ghg-contactos",
+    "displayName": "GHG_Contacto"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "contacto": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    }
+  }
+}

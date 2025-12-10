@@ -25,6 +25,23 @@ export interface ReutilizableDesplegable extends Struct.ComponentSchema {
   };
 }
 
+export interface ReutilizableDinamicQuote extends Struct.ComponentSchema {
+  collectionName: 'components_reutilizable_dinamic_quotes';
+  info: {
+    displayName: 'dinamic_quote';
+  };
+  attributes: {
+    dinamic_btn: Schema.Attribute.Component<'reutilizable.button', false>;
+    dinamic_id: Schema.Attribute.String;
+    dinamic_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    dinamic_subtitulo: Schema.Attribute.String;
+    dinamic_text: Schema.Attribute.Text;
+    dinamic_titulo: Schema.Attribute.String;
+  };
+}
+
 export interface ReutilizableFooter extends Struct.ComponentSchema {
   collectionName: 'components_reutilizable_footers';
   info: {
@@ -128,6 +145,8 @@ export interface SharedSeo extends Struct.ComponentSchema {
     name: 'Seo';
   };
   attributes: {
+    canonicalUrl: Schema.Attribute.String;
+    keyWords: Schema.Attribute.String;
     metaDescription: Schema.Attribute.Text & Schema.Attribute.Required;
     metaTitle: Schema.Attribute.String & Schema.Attribute.Required;
     shareImage: Schema.Attribute.Media<'images'>;
@@ -139,6 +158,7 @@ declare module '@strapi/strapi' {
     export interface ComponentSchemas {
       'reutilizable.button': ReutilizableButton;
       'reutilizable.desplegable': ReutilizableDesplegable;
+      'reutilizable.dinamic-quote': ReutilizableDinamicQuote;
       'reutilizable.footer': ReutilizableFooter;
       'reutilizable.form': ReutilizableForm;
       'reutilizable.navbar': ReutilizableNavbar;
