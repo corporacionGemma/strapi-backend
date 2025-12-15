@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_form_ter_forms",
+  "info": {
+    "displayName": "ter_form"
+  },
+  "options": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "correo": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "numero_casa": {
+      "type": "string"
+    },
+    "servicio": {
+      "type": "string"
+    },
+    "mensaje": {
+      "type": "text"
+    },
+    "fecha_publicacion": {
+      "type": "datetime"
+    }
+  },
+  "config": {}
+}

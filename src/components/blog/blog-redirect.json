@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blog_blog_redirects",
+  "info": {
+    "displayName": "blog_redirect"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "texto": {
+      "type": "string"
+    },
+    "btn": {
+      "type": "component",
+      "component": "reutilizable.button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

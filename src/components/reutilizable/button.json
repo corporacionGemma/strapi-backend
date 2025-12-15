@@ -16,6 +16,19 @@
     },
     "btn_id": {
       "type": "integer"
+    },
+    "btn_img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "btn_img_url": {
+      "type": "string"
     }
   },
   "config": {}

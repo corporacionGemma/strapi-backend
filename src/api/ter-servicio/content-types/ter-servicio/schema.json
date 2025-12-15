@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ter_servicios",
+  "info": {
+    "singularName": "ter-servicio",
+    "pluralName": "ter-servicios",
+    "displayName": "TER_Servicio"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "servicio": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

@@ -1,11 +1,11 @@
 {
-  "collectionName": "components_reutilizable_navbars",
+  "collectionName": "components_footer_ter_footers",
   "info": {
-    "displayName": "Navbar"
+    "displayName": "ter_footer"
   },
   "options": {},
   "attributes": {
-    "navbar_img": {
+    "img": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -15,20 +15,26 @@
         "audios"
       ]
     },
-    "navbar_btn": {
+    "tiulo": {
+      "type": "string"
+    },
+    "texto": {
+      "type": "text"
+    },
+    "social_link": {
       "type": "component",
-      "component": "reutilizable.button",
+      "component": "reutilizable.social-links",
       "repeatable": true
     },
-    "navbar_desplegable": {
+    "Informacion_contacto": {
       "type": "component",
       "component": "reutilizable.desplegable",
       "repeatable": false
     },
-    "navbar_social": {
+    "contenido": {
       "type": "component",
-      "component": "reutilizable.social-links",
-      "repeatable": true
+      "component": "reutilizable.desplegable",
+      "repeatable": false
     }
   },
   "config": {}

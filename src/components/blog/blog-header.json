@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_blog_blog_headers",
+  "info": {
+    "displayName": "blog_header"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "autor": {
+      "type": "string"
+    },
+    "puesto": {
+      "type": "string"
+    },
+    "dia_publicacion": {
+      "type": "string"
+    },
+    "mes_publicacion": {
+      "type": "string"
+    },
+    "tiempo_lectura": {
+      "type": "string"
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "img_header": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "categoria": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

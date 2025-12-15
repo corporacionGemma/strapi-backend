@@ -726,6 +726,245 @@ export interface ApiGhgServicioGhgServicio extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiTerBlogTerBlog extends Struct.CollectionTypeSchema {
+  collectionName: 'ter_blogs';
+  info: {
+    displayName: 'TER_Blog';
+    pluralName: 'ter-blogs';
+    singularName: 'ter-blog';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    blog_content: Schema.Attribute.Component<'blog.blog-content', false>;
+    blog_header: Schema.Attribute.Component<'blog.blog-header', false>;
+    blog_redirect: Schema.Attribute.Component<'blog.blog-redirect', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::ter-blog.ter-blog'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiTerContactFormTerContactForm
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'ter_contact_forms';
+  info: {
+    displayName: 'TER_Contact-Form';
+    pluralName: 'ter-contact-forms';
+    singularName: 'ter-contact-form';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    correo: Schema.Attribute.Email;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    fecha_publicacion: Schema.Attribute.DateTime;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::ter-contact-form.ter-contact-form'
+    > &
+      Schema.Attribute.Private;
+    mensaje: Schema.Attribute.String;
+    nombre: Schema.Attribute.String;
+    numero_casa: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    servicio: Schema.Attribute.String;
+    telefono: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiTerContactoTerContacto extends Struct.SingleTypeSchema {
+  collectionName: 'ter_contactos';
+  info: {
+    displayName: 'TER_Contacto';
+    pluralName: 'ter-contactos';
+    singularName: 'ter-contacto';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    contact_social: Schema.Attribute.Component<
+      'reutilizable.social-links',
+      true
+    >;
+    contacto_quote: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    form: Schema.Attribute.Component<'form.ter-form', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::ter-contacto.ter-contacto'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiTerGeneralTerGeneral extends Struct.SingleTypeSchema {
+  collectionName: 'ter_generals';
+  info: {
+    displayName: 'TER_General';
+    pluralName: 'ter-generals';
+    singularName: 'ter-general';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    footer: Schema.Attribute.Component<'footer.ter-footer', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::ter-general.ter-general'
+    > &
+      Schema.Attribute.Private;
+    navbar: Schema.Attribute.Component<'reutilizable.navbar', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    wp_btn: Schema.Attribute.Component<'reutilizable.wp-btn', false>;
+  };
+}
+
+export interface ApiTerHomeTerHome extends Struct.SingleTypeSchema {
+  collectionName: 'ter_homes';
+  info: {
+    displayName: 'TER_Home';
+    pluralName: 'ter-homes';
+    singularName: 'ter-home';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    banner: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    blog: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    inmobiliaria: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::ter-home.ter-home'
+    > &
+      Schema.Attribute.Private;
+    proyectos: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    reserva: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    servicios: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiTerPropiedadTerPropiedad
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'ter_propiedads';
+  info: {
+    displayName: 'TER_Propiedad';
+    pluralName: 'ter-propiedads';
+    singularName: 'ter-propiedad';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    distrito: Schema.Attribute.String;
+    estado: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::ter-propiedad.ter-propiedad'
+    > &
+      Schema.Attribute.Private;
+    precio: Schema.Attribute.String;
+    prop_img_1: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    prop_img_2: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    prop_img_3: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    prop_img_display: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    prop_quote: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.String;
+    tipo: Schema.Attribute.String;
+    ubicacion: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiTerServicioTerServicio extends Struct.CollectionTypeSchema {
+  collectionName: 'ter_servicios';
+  info: {
+    displayName: 'TER_Servicio';
+    pluralName: 'ter-servicios';
+    singularName: 'ter-servicio';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::ter-servicio.ter-servicio'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    servicio: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    slug: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -1243,6 +1482,13 @@ declare module '@strapi/strapi' {
       'api::ghg-home.ghg-home': ApiGhgHomeGhgHome;
       'api::ghg-nosotro.ghg-nosotro': ApiGhgNosotroGhgNosotro;
       'api::ghg-servicio.ghg-servicio': ApiGhgServicioGhgServicio;
+      'api::ter-blog.ter-blog': ApiTerBlogTerBlog;
+      'api::ter-contact-form.ter-contact-form': ApiTerContactFormTerContactForm;
+      'api::ter-contacto.ter-contacto': ApiTerContactoTerContacto;
+      'api::ter-general.ter-general': ApiTerGeneralTerGeneral;
+      'api::ter-home.ter-home': ApiTerHomeTerHome;
+      'api::ter-propiedad.ter-propiedad': ApiTerPropiedadTerPropiedad;
+      'api::ter-servicio.ter-servicio': ApiTerServicioTerServicio;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

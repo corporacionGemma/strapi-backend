@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "ter_generals",
+  "info": {
+    "singularName": "ter-general",
+    "pluralName": "ter-generals",
+    "displayName": "TER_General"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "navbar": {
+      "type": "component",
+      "component": "reutilizable.navbar",
+      "repeatable": false
+    },
+    "footer": {
+      "type": "component",
+      "component": "footer.ter-footer",
+      "repeatable": false
+    },
+    "wp_btn": {
+      "type": "component",
+      "component": "reutilizable.wp-btn",
+      "repeatable": false
+    }
+  }
+}

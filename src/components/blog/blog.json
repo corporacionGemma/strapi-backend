@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_blog_blogs",
+  "info": {
+    "displayName": "blog"
+  },
+  "options": {},
+  "attributes": {
+    "blog_header": {
+      "type": "component",
+      "component": "blog.blog-header",
+      "repeatable": false
+    },
+    "blog_content": {
+      "type": "component",
+      "component": "blog.blog-content",
+      "repeatable": true
+    },
+    "blog_redirect": {
+      "type": "component",
+      "component": "blog.blog-redirect",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

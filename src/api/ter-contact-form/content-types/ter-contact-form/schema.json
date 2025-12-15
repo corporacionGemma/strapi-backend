@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ter_contact_forms",
+  "info": {
+    "singularName": "ter-contact-form",
+    "pluralName": "ter-contact-forms",
+    "displayName": "TER_Contact-Form"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "correo": {
+      "type": "email"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "numero_casa": {
+      "type": "string"
+    },
+    "servicio": {
+      "type": "string"
+    },
+    "mensaje": {
+      "type": "string"
+    },
+    "fecha_publicacion": {
+      "type": "datetime"
+    }
+  }
+}

@@ -1,25 +1,16 @@
 {
-  "collectionName": "components_reutilizable_sub_quotes",
+  "collectionName": "components_reutilizable_social_links",
   "info": {
-    "displayName": "Sub_Quotes"
+    "displayName": "social_links"
   },
   "options": {},
   "attributes": {
-    "sub_quote_title": {
-      "type": "string"
-    },
-    "sub_quote_subtitle": {
-      "type": "string"
-    },
-    "sub_quote_text": {
-      "type": "text"
-    },
-    "sub_quote_btn": {
+    "btn": {
       "type": "component",
       "component": "reutilizable.button",
       "repeatable": false
     },
-    "sub_quote_img": {
+    "btn_img": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [

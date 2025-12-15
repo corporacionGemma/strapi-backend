@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ter_blogs",
+  "info": {
+    "singularName": "ter-blog",
+    "pluralName": "ter-blogs",
+    "displayName": "TER_Blog"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "string"
+    },
+    "blog_header": {
+      "type": "component",
+      "component": "blog.blog-header",
+      "repeatable": false
+    },
+    "blog_content": {
+      "type": "component",
+      "component": "blog.blog-content",
+      "repeatable": false
+    },
+    "blog_redirect": {
+      "type": "component",
+      "component": "blog.blog-redirect",
+      "repeatable": false
+    }
+  }
+}

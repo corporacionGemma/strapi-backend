@@ -11,6 +11,9 @@
     "quote_subtitulo": {
       "type": "text"
     },
+    "quote_text": {
+      "type": "text"
+    },
     "quote_img": {
       "type": "media",
       "multiple": false,
@@ -33,6 +36,9 @@
       "type": "component",
       "component": "reutilizable.sub-quotes",
       "repeatable": true
+    },
+    "video_url": {
+      "type": "string"
     }
   },
   "config": {}

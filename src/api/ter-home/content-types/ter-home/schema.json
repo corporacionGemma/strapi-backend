@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "ter_homes",
+  "info": {
+    "singularName": "ter-home",
+    "pluralName": "ter-homes",
+    "displayName": "TER_Home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "inmobiliaria": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "proyectos": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "reserva": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "servicios": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "blog": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    }
+  }
+}

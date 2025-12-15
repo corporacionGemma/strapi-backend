@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "ter_contactos",
+  "info": {
+    "singularName": "ter-contacto",
+    "pluralName": "ter-contactos",
+    "displayName": "TER_Contacto"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "contacto_quote": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "form": {
+      "type": "component",
+      "component": "form.ter-form",
+      "repeatable": false
+    },
+    "contact_social": {
+      "type": "component",
+      "component": "reutilizable.social-links",
+      "repeatable": true
+    }
+  }
+}
