@@ -769,7 +769,7 @@ export interface ApiTerBlogTerBlog extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    blog_content: Schema.Attribute.Component<'blog.blog-content', false>;
+    blog_content: Schema.Attribute.Component<'blog.blog-content', true>;
     blog_header: Schema.Attribute.Component<'blog.blog-header', false>;
     blog_redirect: Schema.Attribute.Component<'blog.blog-redirect', false>;
     createdAt: Schema.Attribute.DateTime;

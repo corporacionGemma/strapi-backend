@@ -22,7 +22,7 @@
     "blog_content": {
       "type": "component",
       "component": "blog.blog-content",
-      "repeatable": false
+      "repeatable": true
     },
     "blog_redirect": {
       "type": "component",
