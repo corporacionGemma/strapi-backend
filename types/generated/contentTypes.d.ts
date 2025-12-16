@@ -726,6 +726,38 @@ export interface ApiGhgServicioGhgServicio extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiTerAsesorTerAsesor extends Struct.CollectionTypeSchema {
+  collectionName: 'ter_asesors';
+  info: {
+    displayName: 'TER_Asesor';
+    pluralName: 'ter-asesors';
+    singularName: 'ter-asesor';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    img: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::ter-asesor.ter-asesor'
+    > &
+      Schema.Attribute.Private;
+    nombre: Schema.Attribute.String;
+    proyecto: Schema.Attribute.Enumeration<['proyecto 1', 'proyecto 2']>;
+    publishedAt: Schema.Attribute.DateTime;
+    puesto: Schema.Attribute.String;
+    social: Schema.Attribute.Component<'reutilizable.social-links', true>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiTerBlogTerBlog extends Struct.CollectionTypeSchema {
   collectionName: 'ter_blogs';
   info: {
@@ -1482,6 +1514,7 @@ declare module '@strapi/strapi' {
       'api::ghg-home.ghg-home': ApiGhgHomeGhgHome;
       'api::ghg-nosotro.ghg-nosotro': ApiGhgNosotroGhgNosotro;
       'api::ghg-servicio.ghg-servicio': ApiGhgServicioGhgServicio;
+      'api::ter-asesor.ter-asesor': ApiTerAsesorTerAsesor;
       'api::ter-blog.ter-blog': ApiTerBlogTerBlog;
       'api::ter-contact-form.ter-contact-form': ApiTerContactFormTerContactForm;
       'api::ter-contacto.ter-contacto': ApiTerContactoTerContacto;

@@ -113,6 +113,7 @@ export interface ReutilizableDesplegable extends Struct.ComponentSchema {
     desplegable_btn: Schema.Attribute.Component<'reutilizable.button', true>;
     desplegable_link: Schema.Attribute.String;
     desplegable_titulo: Schema.Attribute.String;
+    img: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
   };
 }
 

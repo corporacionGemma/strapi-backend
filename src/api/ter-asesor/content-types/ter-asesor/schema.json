@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ter_asesors",
+  "info": {
+    "singularName": "ter-asesor",
+    "pluralName": "ter-asesors",
+    "displayName": "TER_Asesor"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "social": {
+      "type": "component",
+      "component": "reutilizable.social-links",
+      "repeatable": true
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "puesto": {
+      "type": "string"
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "proyecto": {
+      "type": "enumeration",
+      "enum": [
+        "proyecto 1",
+        "proyecto 2"
+      ]
+    }
+  }
+}
