@@ -25,6 +25,11 @@
       "type": "component",
       "component": "reutilizable.social-links",
       "repeatable": true
+    },
+    "Terminos": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": true
     }
   }
 }
