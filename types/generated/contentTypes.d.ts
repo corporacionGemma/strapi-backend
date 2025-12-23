@@ -957,10 +957,11 @@ export interface ApiGoarServiciosListGoarServiciosList
   };
   attributes: {
     banner: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    card: Schema.Attribute.Component<'reutilizable.card', true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    detalle: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    detalle: Schema.Attribute.Component<'reutilizable.titulo', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -968,6 +969,7 @@ export interface ApiGoarServiciosListGoarServiciosList
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

@@ -22,6 +22,14 @@
         "videos",
         "audios"
       ]
+    },
+    "text": {
+      "type": "text"
+    },
+    "btn": {
+      "type": "component",
+      "component": "reutilizable.button",
+      "repeatable": false
     }
   },
   "config": {}

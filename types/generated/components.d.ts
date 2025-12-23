@@ -123,8 +123,10 @@ export interface ReutilizableCard extends Struct.ComponentSchema {
     displayName: 'card';
   };
   attributes: {
+    btn: Schema.Attribute.Component<'reutilizable.button', false>;
     card_img: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     content: Schema.Attribute.Component<'reutilizable.card-content', true>;
+    text: Schema.Attribute.Text;
     titulo: Schema.Attribute.String;
   };
 }
@@ -135,10 +137,11 @@ export interface ReutilizableCardContent extends Struct.ComponentSchema {
     displayName: 'card_content';
   };
   attributes: {
+    content_btn: Schema.Attribute.Component<'reutilizable.button', false>;
     content_img: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
-    content_text: Schema.Attribute.String;
+    content_text: Schema.Attribute.Text;
     content_title: Schema.Attribute.String;
   };
 }

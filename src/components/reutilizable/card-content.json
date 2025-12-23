@@ -9,7 +9,7 @@
       "type": "string"
     },
     "content_text": {
-      "type": "string"
+      "type": "text"
     },
     "content_img": {
       "type": "media",
@@ -20,6 +20,11 @@
         "videos",
         "audios"
       ]
+    },
+    "content_btn": {
+      "type": "component",
+      "component": "reutilizable.button",
+      "repeatable": false
     }
   },
   "config": {}

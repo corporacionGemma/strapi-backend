@@ -19,7 +19,15 @@
     "detalle": {
       "type": "component",
       "component": "reutilizable.titulo",
-      "repeatable": false
+      "repeatable": true
+    },
+    "card": {
+      "type": "component",
+      "component": "reutilizable.card",
+      "repeatable": true
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }
