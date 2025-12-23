@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "goar_generals",
+  "info": {
+    "singularName": "goar-general",
+    "pluralName": "goar-generals",
+    "displayName": "GOAR_General"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "navbar": {
+      "type": "component",
+      "component": "reutilizable.navbar",
+      "repeatable": false
+    },
+    "wp_btn": {
+      "type": "component",
+      "component": "reutilizable.wp-btn",
+      "repeatable": false
+    },
+    "footer": {
+      "type": "component",
+      "component": "footer.goar-footer",
+      "repeatable": false
+    }
+  }
+}

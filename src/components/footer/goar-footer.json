@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_footer_goar_footers",
+  "info": {
+    "displayName": "goar_footer"
+  },
+  "options": {},
+  "attributes": {
+    "descripcion": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "contacto": {
+      "type": "component",
+      "component": "reutilizable.desplegable",
+      "repeatable": false
+    },
+    "social": {
+      "type": "component",
+      "component": "reutilizable.social-links",
+      "repeatable": true
+    },
+    "servicios": {
+      "type": "component",
+      "component": "reutilizable.desplegable",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

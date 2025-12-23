@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "goar_trabaja_nosotros",
+  "info": {
+    "singularName": "goar-trabaja-nosotro",
+    "pluralName": "goar-trabaja-nosotros",
+    "displayName": "GOAR_Trabaja_Nosotro"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "instalaciones": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "instalaciones_media": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "form_empleo": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    }
+  }
+}

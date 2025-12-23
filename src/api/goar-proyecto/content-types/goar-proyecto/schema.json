@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "goar_proyectos",
+  "info": {
+    "singularName": "goar-proyecto",
+    "pluralName": "goar-proyectos",
+    "displayName": "GOAR_Proyecto"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    }
+  }
+}

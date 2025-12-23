@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_reutilizable_cards",
+  "info": {
+    "displayName": "card"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "content": {
+      "type": "component",
+      "component": "reutilizable.card-content",
+      "repeatable": true
+    },
+    "card_img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "goar_nosotros",
+  "info": {
+    "singularName": "goar-nosotro",
+    "pluralName": "goar-nosotros",
+    "displayName": "GOAR_Nosotro"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "sobre": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "proyectos": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "mision_vision": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    }
+  }
+}

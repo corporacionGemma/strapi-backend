@@ -726,6 +726,289 @@ export interface ApiGhgServicioGhgServicio extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiGoarContactoGoarContacto extends Struct.SingleTypeSchema {
+  collectionName: 'goar_contactos';
+  info: {
+    displayName: 'GOAR_Contacto';
+    pluralName: 'goar-contactos';
+    singularName: 'goar-contacto';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    banner: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    descripcion: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::goar-contacto.goar-contacto'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    social: Schema.Attribute.Component<'reutilizable.social-links', true>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiGoarEquipoGoarEquipo extends Struct.CollectionTypeSchema {
+  collectionName: 'goar_equipos';
+  info: {
+    displayName: 'GOAR_Equipo_List';
+    pluralName: 'goar-equipos';
+    singularName: 'goar-equipo';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    card: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::goar-equipo.goar-equipo'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiGoarGeneralGoarGeneral extends Struct.SingleTypeSchema {
+  collectionName: 'goar_generals';
+  info: {
+    displayName: 'GOAR_General';
+    pluralName: 'goar-generals';
+    singularName: 'goar-general';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    footer: Schema.Attribute.Component<'footer.goar-footer', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::goar-general.goar-general'
+    > &
+      Schema.Attribute.Private;
+    navbar: Schema.Attribute.Component<'reutilizable.navbar', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    wp_btn: Schema.Attribute.Component<'reutilizable.wp-btn', false>;
+  };
+}
+
+export interface ApiGoarHomeGoarHome extends Struct.SingleTypeSchema {
+  collectionName: 'goar_homes';
+  info: {
+    displayName: 'GOAR_Home';
+    pluralName: 'goar-homes';
+    singularName: 'goar-home';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    banner: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::goar-home.goar-home'
+    > &
+      Schema.Attribute.Private;
+    negocio: Schema.Attribute.Component<'reutilizable.button', true>;
+    nosotros: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    servicios: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiGoarNosotroGoarNosotro extends Struct.SingleTypeSchema {
+  collectionName: 'goar_nosotros';
+  info: {
+    displayName: 'GOAR_Nosotro';
+    pluralName: 'goar-nosotros';
+    singularName: 'goar-nosotro';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    banner: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::goar-nosotro.goar-nosotro'
+    > &
+      Schema.Attribute.Private;
+    mision_vision: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    proyectos: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    sobre: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiGoarProyectoGoarProyecto extends Struct.SingleTypeSchema {
+  collectionName: 'goar_proyectos';
+  info: {
+    displayName: 'GOAR_Proyecto';
+    pluralName: 'goar-proyectos';
+    singularName: 'goar-proyecto';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    banner: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::goar-proyecto.goar-proyecto'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiGoarProyectosListGoarProyectosList
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'goar_proyectos_lists';
+  info: {
+    displayName: 'GOAR_Proyectos_List';
+    pluralName: 'goar-proyectos-lists';
+    singularName: 'goar-proyectos-list';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    banner: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    banner_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    card: Schema.Attribute.Component<'reutilizable.card', true>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    descripcion: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    estado: Schema.Attribute.Enumeration<['En construccion', 'Completado']>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::goar-proyectos-list.goar-proyectos-list'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.String;
+    tipo: Schema.Attribute.Enumeration<
+      ['Residencial', 'Comercial', 'Industrial', 'Salud']
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiGoarServiciosListGoarServiciosList
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'goar_servicios_lists';
+  info: {
+    displayName: 'GOAR_Servicios_List';
+    pluralName: 'goar-servicios-lists';
+    singularName: 'goar-servicios-list';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    banner: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    detalle: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::goar-servicios-list.goar-servicios-list'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiGoarTrabajaNosotroGoarTrabajaNosotro
+  extends Struct.SingleTypeSchema {
+  collectionName: 'goar_trabaja_nosotros';
+  info: {
+    displayName: 'GOAR_Trabaja_Nosotro';
+    pluralName: 'goar-trabaja-nosotros';
+    singularName: 'goar-trabaja-nosotro';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    banner: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    form_empleo: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    instalaciones: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    instalaciones_media: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::goar-trabaja-nosotro.goar-trabaja-nosotro'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiTerAsesorTerAsesor extends Struct.CollectionTypeSchema {
   collectionName: 'ter_asesors';
   info: {
@@ -1515,6 +1798,15 @@ declare module '@strapi/strapi' {
       'api::ghg-home.ghg-home': ApiGhgHomeGhgHome;
       'api::ghg-nosotro.ghg-nosotro': ApiGhgNosotroGhgNosotro;
       'api::ghg-servicio.ghg-servicio': ApiGhgServicioGhgServicio;
+      'api::goar-contacto.goar-contacto': ApiGoarContactoGoarContacto;
+      'api::goar-equipo.goar-equipo': ApiGoarEquipoGoarEquipo;
+      'api::goar-general.goar-general': ApiGoarGeneralGoarGeneral;
+      'api::goar-home.goar-home': ApiGoarHomeGoarHome;
+      'api::goar-nosotro.goar-nosotro': ApiGoarNosotroGoarNosotro;
+      'api::goar-proyecto.goar-proyecto': ApiGoarProyectoGoarProyecto;
+      'api::goar-proyectos-list.goar-proyectos-list': ApiGoarProyectosListGoarProyectosList;
+      'api::goar-servicios-list.goar-servicios-list': ApiGoarServiciosListGoarServiciosList;
+      'api::goar-trabaja-nosotro.goar-trabaja-nosotro': ApiGoarTrabajaNosotroGoarTrabajaNosotro;
       'api::ter-asesor.ter-asesor': ApiTerAsesorTerAsesor;
       'api::ter-blog.ter-blog': ApiTerBlogTerBlog;
       'api::ter-contact-form.ter-contact-form': ApiTerContactFormTerContactForm;

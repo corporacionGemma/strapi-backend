@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "goar_servicios_lists",
+  "info": {
+    "singularName": "goar-servicios-list",
+    "pluralName": "goar-servicios-lists",
+    "displayName": "GOAR_Servicios_List"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "detalle": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    }
+  }
+}

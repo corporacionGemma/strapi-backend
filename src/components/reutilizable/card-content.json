@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_reutilizable_card_contents",
+  "info": {
+    "displayName": "card_content"
+  },
+  "options": {},
+  "attributes": {
+    "content_title": {
+      "type": "string"
+    },
+    "content_text": {
+      "type": "string"
+    },
+    "content_img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

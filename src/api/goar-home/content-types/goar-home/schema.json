@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "goar_homes",
+  "info": {
+    "singularName": "goar-home",
+    "pluralName": "goar-homes",
+    "displayName": "GOAR_Home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "servicios": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "nosotros": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "negocio": {
+      "type": "component",
+      "component": "reutilizable.button",
+      "repeatable": true
+    }
+  }
+}

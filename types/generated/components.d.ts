@@ -55,6 +55,19 @@ export interface BlogBlogRedirect extends Struct.ComponentSchema {
   };
 }
 
+export interface FooterGoarFooter extends Struct.ComponentSchema {
+  collectionName: 'components_footer_goar_footers';
+  info: {
+    displayName: 'goar_footer';
+  };
+  attributes: {
+    contacto: Schema.Attribute.Component<'reutilizable.desplegable', false>;
+    descripcion: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    servicios: Schema.Attribute.Component<'reutilizable.desplegable', false>;
+    social: Schema.Attribute.Component<'reutilizable.social-links', true>;
+  };
+}
+
 export interface FooterTerFooter extends Struct.ComponentSchema {
   collectionName: 'components_footer_ter_footers';
   info: {
@@ -101,6 +114,32 @@ export interface ReutilizableButton extends Struct.ComponentSchema {
     btn_img_url: Schema.Attribute.String;
     btn_link: Schema.Attribute.String;
     btn_text: Schema.Attribute.String;
+  };
+}
+
+export interface ReutilizableCard extends Struct.ComponentSchema {
+  collectionName: 'components_reutilizable_cards';
+  info: {
+    displayName: 'card';
+  };
+  attributes: {
+    card_img: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    content: Schema.Attribute.Component<'reutilizable.card-content', true>;
+    titulo: Schema.Attribute.String;
+  };
+}
+
+export interface ReutilizableCardContent extends Struct.ComponentSchema {
+  collectionName: 'components_reutilizable_card_contents';
+  info: {
+    displayName: 'card_content';
+  };
+  attributes: {
+    content_img: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    content_text: Schema.Attribute.String;
+    content_title: Schema.Attribute.String;
   };
 }
 
@@ -270,9 +309,12 @@ declare module '@strapi/strapi' {
       'blog.blog-content': BlogBlogContent;
       'blog.blog-header': BlogBlogHeader;
       'blog.blog-redirect': BlogBlogRedirect;
+      'footer.goar-footer': FooterGoarFooter;
       'footer.ter-footer': FooterTerFooter;
       'form.ter-form': FormTerForm;
       'reutilizable.button': ReutilizableButton;
+      'reutilizable.card': ReutilizableCard;
+      'reutilizable.card-content': ReutilizableCardContent;
       'reutilizable.desplegable': ReutilizableDesplegable;
       'reutilizable.dinamic-quote': ReutilizableDinamicQuote;
       'reutilizable.footer': ReutilizableFooter;

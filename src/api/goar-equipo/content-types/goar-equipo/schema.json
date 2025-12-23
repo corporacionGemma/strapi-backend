@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "goar_equipos",
+  "info": {
+    "singularName": "goar-equipo",
+    "pluralName": "goar-equipos",
+    "displayName": "GOAR_Equipo_List"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "card": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    }
+  }
+}

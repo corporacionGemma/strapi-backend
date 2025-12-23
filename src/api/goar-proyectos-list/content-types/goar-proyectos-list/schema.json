@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "goar_proyectos_lists",
+  "info": {
+    "singularName": "goar-proyectos-list",
+    "pluralName": "goar-proyectos-lists",
+    "displayName": "GOAR_Proyectos_List"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "banner_img": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "descripcion": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "card": {
+      "type": "component",
+      "component": "reutilizable.card",
+      "repeatable": true
+    },
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "Residencial",
+        "Comercial",
+        "Industrial",
+        "Salud"
+      ]
+    },
+    "estado": {
+      "type": "enumeration",
+      "enum": [
+        "En construccion",
+        "Completado"
+      ]
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}
