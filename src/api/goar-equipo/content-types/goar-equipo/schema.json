@@ -4,7 +4,7 @@
   "info": {
     "singularName": "goar-equipo",
     "pluralName": "goar-equipos",
-    "displayName": "GOAR_Equipo_List"
+    "displayName": "GOAR-Equipo-List"
   },
   "options": {
     "draftAndPublish": true

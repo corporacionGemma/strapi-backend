@@ -726,6 +726,39 @@ export interface ApiGhgServicioGhgServicio extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiGoarContactFormGoarContactForm
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'goar_contact_forms';
+  info: {
+    displayName: 'GOAR-Contact-Form';
+    pluralName: 'goar-contact-forms';
+    singularName: 'goar-contact-form';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    email: Schema.Attribute.Email;
+    fecha_publicacion: Schema.Attribute.DateTime;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::goar-contact-form.goar-contact-form'
+    > &
+      Schema.Attribute.Private;
+    mensaje: Schema.Attribute.Text;
+    nombre: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    telefono: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiGoarContactoGoarContacto extends Struct.SingleTypeSchema {
   collectionName: 'goar_contactos';
   info: {
@@ -759,7 +792,7 @@ export interface ApiGoarContactoGoarContacto extends Struct.SingleTypeSchema {
 export interface ApiGoarEquipoGoarEquipo extends Struct.CollectionTypeSchema {
   collectionName: 'goar_equipos';
   info: {
-    displayName: 'GOAR_Equipo_List';
+    displayName: 'GOAR-Equipo-List';
     pluralName: 'goar-equipos';
     singularName: 'goar-equipo';
   };
@@ -1005,6 +1038,40 @@ export interface ApiGoarTrabajaNosotroGoarTrabajaNosotro
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiGoarTrabajoFormGoarTrabajoForm
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'goar_trabajo_forms';
+  info: {
+    displayName: 'GOAR-Trabajo-Form';
+    pluralName: 'goar-trabajo-forms';
+    singularName: 'goar-trabajo-form';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    categoria: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    cv: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    email: Schema.Attribute.Email;
+    fecha_publicacion: Schema.Attribute.DateTime;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::goar-trabajo-form.goar-trabajo-form'
+    > &
+      Schema.Attribute.Private;
+    nombre: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    telefono: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1800,6 +1867,7 @@ declare module '@strapi/strapi' {
       'api::ghg-home.ghg-home': ApiGhgHomeGhgHome;
       'api::ghg-nosotro.ghg-nosotro': ApiGhgNosotroGhgNosotro;
       'api::ghg-servicio.ghg-servicio': ApiGhgServicioGhgServicio;
+      'api::goar-contact-form.goar-contact-form': ApiGoarContactFormGoarContactForm;
       'api::goar-contacto.goar-contacto': ApiGoarContactoGoarContacto;
       'api::goar-equipo.goar-equipo': ApiGoarEquipoGoarEquipo;
       'api::goar-general.goar-general': ApiGoarGeneralGoarGeneral;
@@ -1809,6 +1877,7 @@ declare module '@strapi/strapi' {
       'api::goar-proyectos-list.goar-proyectos-list': ApiGoarProyectosListGoarProyectosList;
       'api::goar-servicios-list.goar-servicios-list': ApiGoarServiciosListGoarServiciosList;
       'api::goar-trabaja-nosotro.goar-trabaja-nosotro': ApiGoarTrabajaNosotroGoarTrabajaNosotro;
+      'api::goar-trabajo-form.goar-trabajo-form': ApiGoarTrabajoFormGoarTrabajoForm;
       'api::ter-asesor.ter-asesor': ApiTerAsesorTerAsesor;
       'api::ter-blog.ter-blog': ApiTerBlogTerBlog;
       'api::ter-contact-form.ter-contact-form': ApiTerContactFormTerContactForm;

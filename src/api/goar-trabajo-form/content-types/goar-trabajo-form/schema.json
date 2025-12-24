@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "goar_trabajo_forms",
+  "info": {
+    "singularName": "goar-trabajo-form",
+    "pluralName": "goar-trabajo-forms",
+    "displayName": "GOAR-Trabajo-Form"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "categoria": {
+      "type": "string"
+    },
+    "cv": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "fecha_publicacion": {
+      "type": "datetime"
+    }
+  }
+}

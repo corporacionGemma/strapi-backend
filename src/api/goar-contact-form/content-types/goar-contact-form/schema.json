@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "goar_contact_forms",
+  "info": {
+    "singularName": "goar-contact-form",
+    "pluralName": "goar-contact-forms",
+    "displayName": "GOAR-Contact-Form"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "mensaje": {
+      "type": "text"
+    },
+    "fecha_publicacion": {
+      "type": "datetime"
+    }
+  }
+}
