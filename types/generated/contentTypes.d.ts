@@ -1273,6 +1273,34 @@ export interface ApiTerHomeTerHome extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiTerNosotroTerNosotro extends Struct.SingleTypeSchema {
+  collectionName: 'ter_nosotros';
+  info: {
+    displayName: 'TER_Nosotro';
+    pluralName: 'ter-nosotros';
+    singularName: 'ter-nosotro';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::ter-nosotro.ter-nosotro'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    secciones: Schema.Attribute.Component<'reutilizable.titulo', true>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiTerPropiedadTerPropiedad
   extends Struct.CollectionTypeSchema {
   collectionName: 'ter_propiedads';
@@ -1884,6 +1912,7 @@ declare module '@strapi/strapi' {
       'api::ter-contacto.ter-contacto': ApiTerContactoTerContacto;
       'api::ter-general.ter-general': ApiTerGeneralTerGeneral;
       'api::ter-home.ter-home': ApiTerHomeTerHome;
+      'api::ter-nosotro.ter-nosotro': ApiTerNosotroTerNosotro;
       'api::ter-propiedad.ter-propiedad': ApiTerPropiedadTerPropiedad;
       'api::ter-servicio.ter-servicio': ApiTerServicioTerServicio;
       'plugin::content-releases.release': PluginContentReleasesRelease;

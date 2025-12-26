@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "ter_nosotros",
+  "info": {
+    "singularName": "ter-nosotro",
+    "pluralName": "ter-nosotros",
+    "displayName": "TER_Nosotro"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "secciones": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": true
+    }
+  }
+}
