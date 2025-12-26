@@ -1166,10 +1166,10 @@ export interface ApiTerContactFormTerContactForm
       Schema.Attribute.Private;
     mensaje: Schema.Attribute.String;
     nombre: Schema.Attribute.String;
-    numero_casa: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     servicio: Schema.Attribute.String;
     telefono: Schema.Attribute.String;
+    ubicacion: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

@@ -20,7 +20,7 @@
     "telefono": {
       "type": "string"
     },
-    "numero_casa": {
+    "ubicacion": {
       "type": "string"
     },
     "servicio": {
