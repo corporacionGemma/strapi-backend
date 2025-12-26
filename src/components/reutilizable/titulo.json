@@ -39,6 +39,9 @@
     },
     "video_url": {
       "type": "string"
+    },
+    "scrip_id": {
+      "type": "string"
     }
   },
   "config": {}

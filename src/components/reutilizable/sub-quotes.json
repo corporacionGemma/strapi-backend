@@ -28,6 +28,9 @@
         "videos",
         "audios"
       ]
+    },
+    "script_id": {
+      "type": "string"
     }
   },
   "config": {}

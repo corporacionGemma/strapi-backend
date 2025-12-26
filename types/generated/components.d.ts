@@ -245,6 +245,7 @@ export interface ReutilizableSubQuotes extends Struct.ComponentSchema {
     displayName: 'Sub_Quotes';
   };
   attributes: {
+    script_id: Schema.Attribute.String;
     sub_quote_btn: Schema.Attribute.Component<'reutilizable.button', false>;
     sub_quote_img: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
@@ -267,6 +268,7 @@ export interface ReutilizableTitulo extends Struct.ComponentSchema {
     quote_subtitulo: Schema.Attribute.Text;
     quote_text: Schema.Attribute.Text;
     quote_titulo: Schema.Attribute.String;
+    scrip_id: Schema.Attribute.String;
     sub_quote: Schema.Attribute.Component<'reutilizable.sub-quotes', true>;
     video_url: Schema.Attribute.String;
   };
