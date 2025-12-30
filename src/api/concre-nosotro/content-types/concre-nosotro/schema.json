@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "concre_nosotros",
+  "info": {
+    "singularName": "concre-nosotro",
+    "pluralName": "concre-nosotros",
+    "displayName": "CONCRE_Nosotro"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "items": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": true
+    }
+  }
+}

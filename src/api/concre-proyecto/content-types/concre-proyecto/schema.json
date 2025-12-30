@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "concre_proyectos",
+  "info": {
+    "singularName": "concre-proyecto",
+    "pluralName": "concre-proyectos",
+    "displayName": "CONCRE_Proyecto"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "descripcion": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "card": {
+      "type": "component",
+      "component": "reutilizable.card",
+      "repeatable": false
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

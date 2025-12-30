@@ -530,6 +530,67 @@ export interface ApiConcreHomeConcreHome extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiConcreNosotroConcreNosotro extends Struct.SingleTypeSchema {
+  collectionName: 'concre_nosotros';
+  info: {
+    displayName: 'CONCRE_Nosotro';
+    pluralName: 'concre-nosotros';
+    singularName: 'concre-nosotro';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    banner: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    items: Schema.Attribute.Component<'reutilizable.titulo', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::concre-nosotro.concre-nosotro'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiConcreProyectoConcreProyecto
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'concre_proyectos';
+  info: {
+    displayName: 'CONCRE_Proyecto';
+    pluralName: 'concre-proyectos';
+    singularName: 'concre-proyecto';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    banner: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    card: Schema.Attribute.Component<'reutilizable.card', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    descripcion: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::concre-proyecto.concre-proyecto'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiConcreServicioConcreServicio
   extends Struct.CollectionTypeSchema {
   collectionName: 'concre_servicios';
@@ -2021,6 +2082,8 @@ declare module '@strapi/strapi' {
       'api::concre-contact-form.concre-contact-form': ApiConcreContactFormConcreContactForm;
       'api::concre-general.concre-general': ApiConcreGeneralConcreGeneral;
       'api::concre-home.concre-home': ApiConcreHomeConcreHome;
+      'api::concre-nosotro.concre-nosotro': ApiConcreNosotroConcreNosotro;
+      'api::concre-proyecto.concre-proyecto': ApiConcreProyectoConcreProyecto;
       'api::concre-servicio.concre-servicio': ApiConcreServicioConcreServicio;
       'api::ghg-contact-form.ghg-contact-form': ApiGhgContactFormGhgContactForm;
       'api::ghg-contacto.ghg-contacto': ApiGhgContactoGhgContacto;
