@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "concre_servicios",
+  "info": {
+    "singularName": "concre-servicio",
+    "pluralName": "concre-servicios",
+    "displayName": "CONCRE_Servicio"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "servicio": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "kind": "singleType",
+  "collectionName": "concre_homes",
+  "info": {
+    "singularName": "concre-home",
+    "pluralName": "concre-homes",
+    "displayName": "CONCRE_Home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "servicios": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "proyectos": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "quienes_somos": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "empresas": {
+      "type": "component",
+      "component": "reutilizable.button",
+      "repeatable": true
+    },
+    "contacto": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "banner": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

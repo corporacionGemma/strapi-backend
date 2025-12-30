@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "concre_contact_forms",
+  "info": {
+    "singularName": "concre-contact-form",
+    "pluralName": "concre-contact-forms",
+    "displayName": "CONCRE-Contact-Form"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "ubicacion": {
+      "type": "string"
+    },
+    "mensaje": {
+      "type": "text"
+    },
+    "fecha_publicacion": {
+      "type": "datetime"
+    }
+  }
+}

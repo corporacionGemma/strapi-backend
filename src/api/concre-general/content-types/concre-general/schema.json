@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "concre_generals",
+  "info": {
+    "singularName": "concre-general",
+    "pluralName": "concre-generals",
+    "displayName": "CONCRE_General"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "navbar": {
+      "type": "component",
+      "component": "reutilizable.navbar",
+      "repeatable": false
+    },
+    "footer": {
+      "type": "component",
+      "component": "reutilizable.footer",
+      "repeatable": false
+    },
+    "wp_btn": {
+      "type": "component",
+      "component": "reutilizable.wp-btn",
+      "repeatable": false
+    }
+  }
+}
