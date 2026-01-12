@@ -29,6 +29,18 @@
     },
     "canonicalUrl": {
       "type": "string"
+    },
+    "metaAddressLocality": {
+      "type": "string"
+    },
+    "metaAddressCountry": {
+      "type": "string"
+    },
+    "metaContactTelephone": {
+      "type": "string"
+    },
+    "metaContactType": {
+      "type": "string"
     }
   }
 }

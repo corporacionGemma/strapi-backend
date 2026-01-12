@@ -487,6 +487,7 @@ export interface ApiConcreGeneralConcreGeneral extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     navbar: Schema.Attribute.Component<'reutilizable.navbar', false>;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -772,6 +773,7 @@ export interface ApiGhgGeneralGhgGeneral extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     navbar: Schema.Attribute.Component<'reutilizable.navbar', false>;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1031,6 +1033,7 @@ export interface ApiGoarGeneralGoarGeneral extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     navbar: Schema.Attribute.Component<'reutilizable.navbar', false>;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1424,6 +1427,7 @@ export interface ApiTerGeneralTerGeneral extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     navbar: Schema.Attribute.Component<'reutilizable.navbar', false>;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
