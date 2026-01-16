@@ -1171,6 +1171,37 @@ export interface ApiGoarProyectosListGoarProyectosList
   };
 }
 
+export interface ApiGoarServicioGoarServicio extends Struct.SingleTypeSchema {
+  collectionName: 'goar_servicios';
+  info: {
+    displayName: 'GOAR_Servicio';
+    pluralName: 'goar-servicios';
+    singularName: 'goar-servicio';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    AreasExperiencia: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    banner: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    CTA: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    Inovacion: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::goar-servicio.goar-servicio'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiGoarServiciosListGoarServiciosList
   extends Struct.CollectionTypeSchema {
   collectionName: 'goar_servicios_lists';
@@ -1184,6 +1215,7 @@ export interface ApiGoarServiciosListGoarServiciosList
   };
   attributes: {
     banner: Schema.Attribute.Component<'reutilizable.titulo', false>;
+    bannerImg: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     card: Schema.Attribute.Component<'reutilizable.card', true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -2104,6 +2136,7 @@ declare module '@strapi/strapi' {
       'api::goar-nosotro.goar-nosotro': ApiGoarNosotroGoarNosotro;
       'api::goar-proyecto.goar-proyecto': ApiGoarProyectoGoarProyecto;
       'api::goar-proyectos-list.goar-proyectos-list': ApiGoarProyectosListGoarProyectosList;
+      'api::goar-servicio.goar-servicio': ApiGoarServicioGoarServicio;
       'api::goar-servicios-list.goar-servicios-list': ApiGoarServiciosListGoarServiciosList;
       'api::goar-trabaja-nosotro.goar-trabaja-nosotro': ApiGoarTrabajaNosotroGoarTrabajaNosotro;
       'api::goar-trabajo-form.goar-trabajo-form': ApiGoarTrabajoFormGoarTrabajoForm;

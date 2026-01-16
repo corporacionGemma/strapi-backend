@@ -28,6 +28,16 @@
     },
     "slug": {
       "type": "string"
+    },
+    "bannerImg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }

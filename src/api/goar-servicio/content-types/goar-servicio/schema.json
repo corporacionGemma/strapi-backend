@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "goar_servicios",
+  "info": {
+    "singularName": "goar-servicio",
+    "pluralName": "goar-servicios",
+    "displayName": "GOAR_Servicio"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "AreasExperiencia": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "Inovacion": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    },
+    "CTA": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": false
+    }
+  }
+}
