@@ -1251,6 +1251,7 @@ export interface ApiGoarTrabajaNosotroGoarTrabajaNosotro
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    equipo: Schema.Attribute.Component<'reutilizable.titulo', true>;
     form_empleo: Schema.Attribute.Component<'reutilizable.titulo', false>;
     instalaciones: Schema.Attribute.Component<'reutilizable.titulo', false>;
     instalaciones_media: Schema.Attribute.Media<

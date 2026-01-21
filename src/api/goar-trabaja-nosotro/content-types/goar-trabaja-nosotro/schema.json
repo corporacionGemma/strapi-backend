@@ -35,6 +35,11 @@
       "type": "component",
       "component": "reutilizable.titulo",
       "repeatable": false
+    },
+    "equipo": {
+      "type": "component",
+      "component": "reutilizable.titulo",
+      "repeatable": true
     }
   }
 }
