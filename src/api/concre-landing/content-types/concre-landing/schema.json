@@ -1,0 +1,215 @@
+{
+  "kind": "singleType",
+  "collectionName": "concre_landings",
+  "info": {
+    "singularName": "concre-landing",
+    "pluralName": "concre-landings",
+    "displayName": "CONCRE_Landing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_titulo_resaltado1": {
+      "type": "string"
+    },
+    "hero_titulo_principal": {
+      "type": "string"
+    },
+    "hero_descripcion": {
+      "type": "text"
+    },
+    "hero_beneficio_1": {
+      "type": "string"
+    },
+    "hero_beneficio_2": {
+      "type": "string"
+    },
+    "hero_btn_texto": {
+      "type": "string"
+    },
+    "hero_garantia_texto": {
+      "type": "string"
+    },
+    "hero_imagen_fondo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "hero_titulo_resaltado_2": {
+      "type": "string"
+    },
+    "trust_titulo_azul": {
+      "type": "string"
+    },
+    "trust_titulo_negro": {
+      "type": "string"
+    },
+    "asesoria_titulo_negro": {
+      "type": "string"
+    },
+    "asesoria_titulo_azul": {
+      "type": "string"
+    },
+    "asesoria_subtitulo": {
+      "type": "string"
+    },
+    "asesoria_btn_texto": {
+      "type": "string"
+    },
+    "productos_titulo_negro": {
+      "type": "string"
+    },
+    "productos_titulo_azul": {
+      "type": "string"
+    },
+    "productos_subtitulo": {
+      "type": "string"
+    },
+    "prod1_imagen": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "prod1_titulo": {
+      "type": "string"
+    },
+    "prod1_descripcion": {
+      "type": "text"
+    },
+    "prod1_btn_texto": {
+      "type": "string"
+    },
+    "prod2_imagen": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "prod2_titulo": {
+      "type": "string"
+    },
+    "prod2_descripcion": {
+      "type": "text"
+    },
+    "prod2_btn_texto": {
+      "type": "string"
+    },
+    "pasos_titulo": {
+      "type": "string"
+    },
+    "pasos_btn_texto": {
+      "type": "string"
+    },
+    "testimonios_titulo_negro": {
+      "type": "string"
+    },
+    "testimonios_titulo_azul": {
+      "type": "string"
+    },
+    "testimonio1_imagen": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "testimonio1_texto": {
+      "type": "text"
+    },
+    "testimonio1_autor": {
+      "type": "string"
+    },
+    "testimonio2_imagen": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "testimonio2_texto": {
+      "type": "text"
+    },
+    "testimonio2_autor": {
+      "type": "string"
+    },
+    "testimonio3_imagen": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "testimonio3_texto": {
+      "type": "text"
+    },
+    "testimonio3_autor": {
+      "type": "string"
+    },
+    "agenda_texto_azul": {
+      "type": "string"
+    },
+    "agenda_titulo": {
+      "type": "string"
+    },
+    "agenda_imagen": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "footer_titulo": {
+      "type": "string"
+    },
+    "footer_descripcion": {
+      "type": "text"
+    },
+    "footer_direccion": {
+      "type": "string"
+    },
+    "footer_email": {
+      "type": "string"
+    },
+    "footer_horario": {
+      "type": "string"
+    },
+    "mapa_imagen": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

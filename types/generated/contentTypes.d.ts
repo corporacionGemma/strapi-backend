@@ -531,6 +531,97 @@ export interface ApiConcreHomeConcreHome extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiConcreLandingConcreLanding extends Struct.SingleTypeSchema {
+  collectionName: 'concre_landings';
+  info: {
+    displayName: 'CONCRE_Landing';
+    pluralName: 'concre-landings';
+    singularName: 'concre-landing';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    agenda_imagen: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    agenda_texto_azul: Schema.Attribute.String;
+    agenda_titulo: Schema.Attribute.String;
+    asesoria_btn_texto: Schema.Attribute.String;
+    asesoria_subtitulo: Schema.Attribute.String;
+    asesoria_titulo_azul: Schema.Attribute.String;
+    asesoria_titulo_negro: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    footer_descripcion: Schema.Attribute.Text;
+    footer_direccion: Schema.Attribute.String;
+    footer_email: Schema.Attribute.String;
+    footer_horario: Schema.Attribute.String;
+    footer_titulo: Schema.Attribute.String;
+    hero_beneficio_1: Schema.Attribute.String;
+    hero_beneficio_2: Schema.Attribute.String;
+    hero_btn_texto: Schema.Attribute.String;
+    hero_descripcion: Schema.Attribute.Text;
+    hero_garantia_texto: Schema.Attribute.String;
+    hero_imagen_fondo: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    hero_titulo_principal: Schema.Attribute.String;
+    hero_titulo_resaltado_2: Schema.Attribute.String;
+    hero_titulo_resaltado1: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::concre-landing.concre-landing'
+    > &
+      Schema.Attribute.Private;
+    mapa_imagen: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    pasos_btn_texto: Schema.Attribute.String;
+    pasos_titulo: Schema.Attribute.String;
+    prod1_btn_texto: Schema.Attribute.String;
+    prod1_descripcion: Schema.Attribute.Text;
+    prod1_imagen: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    prod1_titulo: Schema.Attribute.String;
+    prod2_btn_texto: Schema.Attribute.String;
+    prod2_descripcion: Schema.Attribute.Text;
+    prod2_imagen: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    prod2_titulo: Schema.Attribute.String;
+    productos_subtitulo: Schema.Attribute.String;
+    productos_titulo_azul: Schema.Attribute.String;
+    productos_titulo_negro: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    testimonio1_autor: Schema.Attribute.String;
+    testimonio1_imagen: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    testimonio1_texto: Schema.Attribute.Text;
+    testimonio2_autor: Schema.Attribute.String;
+    testimonio2_imagen: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    testimonio2_texto: Schema.Attribute.Text;
+    testimonio3_autor: Schema.Attribute.String;
+    testimonio3_imagen: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    testimonio3_texto: Schema.Attribute.Text;
+    testimonios_titulo_azul: Schema.Attribute.String;
+    testimonios_titulo_negro: Schema.Attribute.String;
+    trust_titulo_azul: Schema.Attribute.String;
+    trust_titulo_negro: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiConcreNosotroConcreNosotro extends Struct.SingleTypeSchema {
   collectionName: 'concre_nosotros';
   info: {
@@ -2119,6 +2210,7 @@ declare module '@strapi/strapi' {
       'api::concre-contact-form.concre-contact-form': ApiConcreContactFormConcreContactForm;
       'api::concre-general.concre-general': ApiConcreGeneralConcreGeneral;
       'api::concre-home.concre-home': ApiConcreHomeConcreHome;
+      'api::concre-landing.concre-landing': ApiConcreLandingConcreLanding;
       'api::concre-nosotro.concre-nosotro': ApiConcreNosotroConcreNosotro;
       'api::concre-proyecto.concre-proyecto': ApiConcreProyectoConcreProyecto;
       'api::concre-servicio.concre-servicio': ApiConcreServicioConcreServicio;

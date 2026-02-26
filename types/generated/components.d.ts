@@ -102,6 +102,29 @@ export interface FormTerForm extends Struct.ComponentSchema {
   };
 }
 
+export interface LandingElementsCardBeneficio extends Struct.ComponentSchema {
+  collectionName: 'components_landing_elements_card_beneficios';
+  info: {
+    displayName: 'CardBeneficio';
+  };
+  attributes: {
+    descripcion: Schema.Attribute.Text;
+    icono: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    titulo: Schema.Attribute.String;
+  };
+}
+
+export interface LandingElementsItemFaq extends Struct.ComponentSchema {
+  collectionName: 'components_landing_elements_item_faqs';
+  info: {
+    displayName: 'ItemFAQ';
+  };
+  attributes: {
+    pregunta: Schema.Attribute.String;
+    respuesta: Schema.Attribute.Text;
+  };
+}
+
 export interface ReutilizableButton extends Struct.ComponentSchema {
   collectionName: 'components_reutilizable_buttons';
   info: {
@@ -321,6 +344,8 @@ declare module '@strapi/strapi' {
       'footer.goar-footer': FooterGoarFooter;
       'footer.ter-footer': FooterTerFooter;
       'form.ter-form': FormTerForm;
+      'landing-elements.card-beneficio': LandingElementsCardBeneficio;
+      'landing-elements.item-faq': LandingElementsItemFaq;
       'reutilizable.button': ReutilizableButton;
       'reutilizable.card': ReutilizableCard;
       'reutilizable.card-content': ReutilizableCardContent;

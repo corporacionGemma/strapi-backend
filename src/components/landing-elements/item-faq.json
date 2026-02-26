@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_landing_elements_item_faqs",
+  "info": {
+    "displayName": "ItemFAQ"
+  },
+  "options": {},
+  "attributes": {
+    "pregunta": {
+      "type": "string"
+    },
+    "respuesta": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

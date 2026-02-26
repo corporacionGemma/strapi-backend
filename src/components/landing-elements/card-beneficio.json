@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_landing_elements_card_beneficios",
+  "info": {
+    "displayName": "CardBeneficio"
+  },
+  "options": {},
+  "attributes": {
+    "icono": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}
